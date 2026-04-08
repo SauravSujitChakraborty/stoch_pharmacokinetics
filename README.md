@@ -10,7 +10,7 @@ Stochastic Modeling of Pharmacokinetic Decay
 
 ==> By incorporating Brownian Motion (metabolic noise), the simulation moves beyond deterministic equations to model the 'jagged' non-linear reality of biological and financial systems.
 
-==> Similarity to Quantitative Models: This model is mathematically isomorphic to Market Impact Theory. In finance, a 'dose' represents a large trade block,'absorption' represents the temporary price impact, and 'elimination' represents the market's mean-reversion toward equilibrium.
+==> Similarity to Quantitative Models: This model is mathematically isomorphic to Market Impact Theory. In finance, a 'dose' represents a large trade block, 'absorption' represents the temporary price impact, and 'elimination' represents the market's mean-reversion toward equilibrium.
 
 2. Mathematical Framework
 
@@ -31,13 +31,6 @@ $k_{e}$ : Elimination rate constant (speed of clearance/decay).
 $D$ : Initial Dosage (mg).
 
 $\sigma dW_{t}$ : The Wiener Process, representing random metabolic fluctuations.
-
-### B. Numerical Solver
-
-The code utilizes the Euler-Maruyama Method to integrate the SDE.
-
-
-
 
 B. Numerical Solver
 
@@ -65,7 +58,7 @@ The resulting output demonstrates the Impulse-Response nature of the system.
 
 ==> The Jitter: Visible noise on the curve representing the stochastic metabolic component, proving the model's robustness against perfect-curve bias.
 
-6. Environment & Reproducibility
+5. Environment & Reproducibility
  
 ==> To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
 
