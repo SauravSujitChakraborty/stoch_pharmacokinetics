@@ -21,16 +21,22 @@ A. The Governing Equation
 ==> The change in concentration C at time t is defined as:
 
 $$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Absorption}} - \underbrace{\left( k_e \cdot C_t \right) dt}_{\text{Elimination}} + \underbrace{\sigma dW_t}_{\text{Metabolic Noise}} $$
-
 where,
 
-$​k_{a}$ : Absorption rate constant (speed of entry).
+$k_{a}$ : Absorption rate constant (speed of entry).
 
-​$k_{e}$ : Elimination rate constant (speed of clearance/decay).
+$k_{e}$ : Elimination rate constant (speed of clearance/decay).
 
-$​D$ : Initial Dosage (mg).
+$D$ : Initial Dosage (mg).
 
-$​\sigma dW_{t}$ : The Wiener Process, representing random metabolic fluctuations.
+$\sigma dW_{t}$ : The Wiener Process, representing random metabolic fluctuations.
+
+### B. Numerical Solver
+
+The code utilizes the Euler-Maruyama Method to integrate the SDE.
+
+
+
 
 B. Numerical Solver
 
