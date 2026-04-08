@@ -1,4 +1,4 @@
-# stoch_pharmacokinetics
+# stoch_pharmacokinetics 
 
 NOTE :- This project was made by me on June'25, preserved and finally published on Apr 8,'26.
 
