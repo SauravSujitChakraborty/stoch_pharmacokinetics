@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np 
 import matplotlib.pyplot as plt
 
 def simulate_drug_concentration(n_hours, dose_mg, absorption_rate, elimination_rate):
