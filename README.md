@@ -24,13 +24,13 @@ $$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Abs
 
 where,
 
-$​k_a$ : Absorption rate constant (speed of entry).
+$​k_{a}$ : Absorption rate constant (speed of entry).
 
- ​$k_e$ : Elimination rate constant (speed of clearance/decay).
+​$k_{e}$ : Elimination rate constant (speed of clearance/decay).
 
 $​D$ : Initial Dosage (mg).
 
-$​\sigma dW_t$ : The Wiener Process, representing random metabolic fluctuations.
+$​\sigma dW_{t}$ : The Wiener Process, representing random metabolic fluctuations.
 
 B. Numerical Solver
 
