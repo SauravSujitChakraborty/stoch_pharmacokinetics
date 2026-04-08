@@ -26,7 +26,7 @@ where,
 
 $​k_a$ : Absorption rate constant (speed of entry).
 
-​$k_e$ : Elimination rate constant (speed of clearance/decay).
+ ​$k_e$ : Elimination rate constant (speed of clearance/decay).
 
 $​D$ : Initial Dosage (mg).
 
