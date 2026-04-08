@@ -1,0 +1,5 @@
+# Project : Pharmacokinetic Stochastic Simulation 
+# Mathematics : Stochastic Differential Equations 
+
+numpy==2.2.3
+matplotlib==3.10.1
