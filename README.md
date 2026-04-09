@@ -4,6 +4,8 @@ NOTE :- This project was made by me on June'25, preserved and finally published 
 
 Stochastic Modeling of Pharmacokinetic Decay
 
+The simulation utilizes the Euler-Maruyama numerical method to solve the underlying Stochastic Differential Equation (SDE). This approach allows for the integration of deterministic first-order kinetics with Gaussian metabolic noise, providing a more realistic representation of physiological variability than standard ODE solvers.
+
 1. Introduction
 
 ==> This project implements a Stochastic One-Compartment Pharmacokinetic (PK) Model. It simulates how a compound is absorbed into and eliminated from the bloodstream over time.
