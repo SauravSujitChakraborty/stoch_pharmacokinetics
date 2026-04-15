@@ -20,7 +20,7 @@ The simulation utilizes the Euler-Maruyama numerical method to solve the underly
 
 A. The Governing Equation
 
-==> The change in concentration C at time t is defined as:
+==> The change in concentration C at time t is defined as :
 
 $$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Absorption}} - \underbrace{\left( k_e \cdot C_t \right) dt}_{\text{Elimination}} + \underbrace{\sigma dW_t}_{\text{Metabolic Noise}} $$
 
@@ -42,7 +42,7 @@ B. Numerical Solver
 
 3. Key Metrics & Analytics
 
-==> The simulation extracts three critical 'exposure' metrics used in Clinical Pharmacology and High-Frequency Trading:
+The simulation extracts three critical 'exposure' metrics used in Clinical Pharmacology and High-Frequency Trading :
 
 ==> $C_{max}$ (Peak Concentration): The maximum intensity of the signal before decay dominates.
 
@@ -62,8 +62,28 @@ The resulting output demonstrates the Impulse-Response nature of the system.
 
 5. Environment & Reproducibility
  
-==> To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
+To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
 
 ==> NumPy 2.2.3: For high-performance matrix operations and exponential calculations.
 
 ==> Matplotlib 3.10.1: For professional-grade temporal visualization
+
+6. Installation
+
+==> Cloning the repository :
+
+```bash
+
+git clone https://github.com/your-username/pharmacokinetic-decay-sde.git
+cd pharmacokinetic-decay-sde
+
+==> Installing Dependencies :
+
+​We can install the required scientific computing libraries via pip:
+
+```bash
+
+pip install numpy==2.2.3 matplotlib==3.10.1
+
+
+
