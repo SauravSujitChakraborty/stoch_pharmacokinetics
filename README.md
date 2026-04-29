@@ -4,7 +4,7 @@ NOTE :- This project was made by me on June'25, preserved and finally published 
 
 Stochastic Modeling of Pharmacokinetic Decay
 
-The simulation utilizes the Euler-Maruyama numerical method to solve the underlying Stochastic Differential Equation (SDE). This approach allows for the integration of deterministic first-order kinetics with Gaussian metabolic noise, providing a more realistic representation of physiological variability than standard ODE solvers.
+==> The simulation utilizes the Euler-Maruyama numerical method to solve the underlying Stochastic Differential Equation (SDE). This approach allows for the integration of deterministic first-order kinetics with Gaussian metabolic noise, providing a more realistic representation of physiological variability than standard ODE solvers.
 
 1. Introduction
 
@@ -22,17 +22,17 @@ A. The Governing Equation
 
 ==> The change in concentration C at time t is defined as :
 
-$$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Absorption}} - \underbrace{\left( k_e \cdot C_t \right) dt}_{\text{Elimination}} + \underbrace{\sigma dW_t}_{\text{Metabolic Noise}} $$
+ => $$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Absorption}} - \underbrace{\left( k_e \cdot C_t \right) dt}_{\text{Elimination}} + \underbrace{\sigma dW_t}_{\text{Metabolic Noise}} $$
 
 where,
 
-$k_{a}$ : Absorption rate constant (speed of entry).
+  => $k_{a}$ : Absorption rate constant (speed of entry).
 
-$k_{e}$ : Elimination rate constant (speed of clearance/decay).
+  => $k_{e}$ : Elimination rate constant (speed of clearance/decay).
 
-$D$ : Initial Dosage (mg).
+  => $D$ : Initial Dosage (mg).
 
-$\sigma dW_{t}$ : The Wiener Process, representing random metabolic fluctuations.
+  => $\sigma dW_{t}$ : The Wiener Process, representing random metabolic fluctuations.
 
 B. Numerical Solver
 
@@ -42,48 +42,44 @@ B. Numerical Solver
 
 3. Key Metrics & Analytics
 
-The simulation extracts three critical 'exposure' metrics used in Clinical Pharmacology and High-Frequency Trading :
+==> The simulation extracts three critical 'exposure' metrics used in Clinical Pharmacology and High-Frequency Trading :
 
-==> $C_{max}$ (Peak Concentration): The maximum intensity of the signal before decay dominates.
+ => $C_{max}$ (Peak Concentration): The maximum intensity of the signal before decay dominates.
 
-==> $T_{max}$ (Time to Peak): The efficiency of the absorption phase.
+ => $T_{max}$ (Time to Peak): The efficiency of the absorption phase.
 
-==> Terminal Decay: The residual impact of the 'shock' after a full 24-hour cycle.
+ => Terminal Decay: The residual impact of the 'shock' after a full 24-hour cycle.
 
 4. Visualizing the Dissipative System
 
-The resulting output demonstrates the Impulse-Response nature of the system.
+==> The resulting output demonstrates the Impulse-Response nature of the system.
 
-==> The Rise: Dominated by the exponential input signal.
+ => The Rise: Dominated by the exponential input signal.
 
-==> The Fall: A first-order decay process where the rate of clearance is proportional to the current concentration.
+ => The Fall: A first-order decay process where the rate of clearance is proportional to the current concentration.
 
-==> The Jitter: Visible noise on the curve representing the stochastic metabolic component, proving the model's robustness against perfect-curve bias.
+ => The Jitter: Visible noise on the curve representing the stochastic metabolic component, proving the model's robustness against perfect-curve bias.
 
 5. Environment & Reproducibility
  
-To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
+==> To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
 
-==> NumPy 2.2.3: For high-performance matrix operations and exponential calculations.
+ => NumPy :- For high-performance matrix operations and exponential calculations.
 
-==> Matplotlib 3.10.1: For professional-grade temporal visualization
+ => Matplotlib :- For professional-grade temporal visualization
 
 6. Installation
 
 ==> Cloning the repository :
 
 ```bash
+git clone https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git 
+```
 
-git clone https://github.com/your-username/pharmacokinetic-decay-sde.git
-cd pharmacokinetic-decay-sde
+==> Installing tependencies :
 
-==> Installing Dependencies :
-
-​We can install the required scientific computing libraries via pip:
-
-```bash
-
-pip install numpy==2.2.3 matplotlib==3.10.1
-
+​```bash
+pip install -r requirements.txt
+```
 
 
