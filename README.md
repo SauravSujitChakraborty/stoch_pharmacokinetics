@@ -60,6 +60,11 @@ B. Numerical Solver
 
  => The Jitter: Visible noise on the curve representing the stochastic metabolic component, proving the model's robustness against perfect-curve bias.
 
+ ==> Graph 
+
+ ![Stochastic PK Simulation](./Stoch_Modelling_Pharmacokinetics_Output_Graph.png)
+ 
+
 5. Environment & Reproducibility
  
 ==> To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
@@ -76,10 +81,12 @@ B. Numerical Solver
 git clone https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git 
 ```
 
-==> Installing tependencies :
+==> Installing the dependencies :
 
-​```bash
+```bash
 pip install -r requirements.txt
 ```
+
+
 
 
