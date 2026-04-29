@@ -66,7 +66,7 @@ B. Numerical Solver
 
 Results 
 
-==> Peak Concentration ($C_{max}$) ~33.45 mg/L (Maximum toxicity risk threshold.)
+==> Peak Concentration ($C_{max}$) ~70.50 mg/L (Maximum toxicity risk threshold.)
 
 ==> Time to Peak ($T_{max}$) ~2.1 hours (Efficiency of the absorption phase.)
 
