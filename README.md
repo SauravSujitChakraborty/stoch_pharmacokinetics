@@ -66,11 +66,11 @@ B. Numerical Solver
 
 Results 
 
-==> Peak Concentration (C_{max}) ~33.45 mg/L (Maximum toxicity risk threshold.)
+==> Peak Concentration ($C_{max}$) ~33.45 mg/L (Maximum toxicity risk threshold.)
 
-==> Time to Peak (T_{max}) ~2.1 hours (Efficiency of the absorption phase.)
+==> Time to Peak ($T_{max}$) ~2.1 hours (Efficiency of the absorption phase.)
 
-==> 24-hour Residual ~2.48 mg/L (Residual impact/market "memory.")
+==> 24-hour Residual Level ~2.48 mg/L (Residual impact/market "memory.")
  
 
 5. Environment & Reproducibility
