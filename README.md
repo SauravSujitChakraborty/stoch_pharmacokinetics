@@ -22,7 +22,7 @@ A. The Governing Equation
 
 ==> The change in concentration C at time t is defined as :
 
- => $$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Absorption}} - \underbrace{\left( k_e \cdot C_t \right) dt}_{\text{Elimination}} + \underbrace{\sigma dW_t}_{\text{Metabolic Noise}} $$
+$$ dC_t = \underbrace{\left( k_a \cdot D \cdot e^{-k_a t} \right) dt}_{\text{Absorption}} - \underbrace{\left( k_e \cdot C_t \right) dt}_{\text{Elimination}} + \underbrace{\sigma dW_t}_{\text{Metabolic Noise}} $$
 
 where,
 
@@ -38,7 +38,7 @@ B. Numerical Solver
 
 ==> The code utilizes the Euler-Maruyama Method to integrate the SDE.
 
-==> This iterative approach allows us to track the system state across 240 discrete time-steps (dt = 0.1), ensuring high-fidelity results that capture both the trend and the stochastic volatility.
+==> This iterative approach allows us to track the system state across 240 discrete time-steps ($dt$ = 0.1), ensuring high-fidelity results that capture both the trend and the stochastic volatility.
 
 3. Key Metrics & Analytics
 
@@ -63,6 +63,14 @@ B. Numerical Solver
  ==> Graph 
 
  ![Stochastic PK Simulation](./Stoch_Modelling_Pharmacokinetics_Output_Graph.png)
+
+Results 
+
+==> Peak Concentration (C_{max}) ~33.45 mg/L (Maximum toxicity risk threshold.)
+
+==> Time to Peak (T_{max}) ~2.1 hours (Efficiency of the absorption phase.)
+
+==> 24-hour Residual ~2.48 mg/L (Residual impact/market "memory.")
  
 
 5. Environment & Reproducibility
