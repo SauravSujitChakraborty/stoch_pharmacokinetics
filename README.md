@@ -82,19 +82,16 @@ Results
  => Matplotlib :- For professional-grade temporal visualization
 
 6. Installation
+   
+You can view the source code directly on the [stoch_pharmacokinetics](https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git) repository page.
 
-==> Cloning the repository :
-
+To install it locally, run:
 ```bash
-git clone https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git 
+git clone [https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git](https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git)
 ```
 
-==> Installing the dependencies :
+Installing thedependencies :-
 
 ```bash
 pip install -r requirements.txt
 ```
-
-
-
-
