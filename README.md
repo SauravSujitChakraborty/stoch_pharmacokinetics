@@ -1,6 +1,6 @@
 # stoch_pharmacokinetics 
 
-NOTE :- This project was made by me during July 208-July 2019, preserved and finally published on Apr 8,'26.
+NOTE :- This project was made by me during Aug 2025, preserved and finally published on Apr 8,'26.
 
 Stochastic Modeling of Pharmacokinetic Decay
 
