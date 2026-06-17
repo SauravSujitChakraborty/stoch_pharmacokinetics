@@ -66,16 +66,13 @@ B. Numerical Solver
 
 Results 
 
-==> Peak Concentration ($C_{max}$) ~70.50 mg/L (Maximum toxicity risk threshold.)
+=> Peak Concentration ($C_{max}$) ~70.50 mg/L (Maximum toxicity risk threshold.)
 
-==> Time to Peak ($T_{max}$) ~2.1 hours (Efficiency of the absorption phase.)
+=> Time to Peak ($T_{max}$) ~2.1 hours (Efficiency of the absorption phase.)
 
-==> 24-hour Residual Level ~2.48 mg/L (Residual impact/market "memory.")
+=> 24-hour Residual Level ~2.48 mg/L (Residual impact/market "memory.")
  
-
-5. Environment & Reproducibility
- 
-==> To ensure the mathematical results are reproducible across different systems, the project utilizes fixed versions of the numeric engine:
+5. Core Packages 
 
  => NumPy :- For high-performance matrix operations and exponential calculations.
 
