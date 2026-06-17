@@ -83,11 +83,20 @@ Results
 
  6. Installation
 
-=> To clone and run this simulation engine locally, execute the following commands in your terminal:
+=> To clone and run this simulation engine locally, execute the following commands in your terminal :-
 
 ```bash
 git clone https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git
 cd stoch_pharmacokinetics
+```
+=> Create and activate environment :-
+
+```bash
+python -m venv venv
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
 ```
 
 => Installing the dependencies :-
