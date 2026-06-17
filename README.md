@@ -81,6 +81,22 @@ Results
 
  => Matplotlib :- For professional-grade temporal visualization
 
+ 6. Installation
+
+=> To clone and run this simulation engine locally, execute the following commands in your terminal:
+
+```bash
+git clone https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git
+cd stoch_pharmacokinetics
+'''
+=> Installing the dependencies :-
+
+```bash
+pip install -r requirements.txt
+```
+
+
+
 6. Installation
    
 You can view the source code directly on the [stoch_pharmacokinetics](https://github.com/SauravSujitChakraborty/stoch_pharmacokinetics.git) repository page.
